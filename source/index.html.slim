@@ -1,12 +1,42 @@
 ---
-title: Starter Middleman template
+title: Покупай с нами
 ---
 
 body
-  .container.text-center
-    h1 Starter Middleman template
+  .main.row
+    section.col-lg-3.section-blue
+      .row
+        .col-lg-6.col-lg-offset-3
+          = image_tag 'book.png', class: 'img-responsive'
+      .row
+        .col-lg-12.col-lg-offset-4
+          h1 книги
+      .links
+        .row
+          .col-lg-12.col-lg-offset-2
+            = link_to 'http://www.ozon.ru', target: 'ozon' do
+              = image_tag 'banners/ozon.png', class: 'img-responsive'
 
-    p.lead
-      | Use this document as a way to quickly start any new project.
-      br 
-      | All you get is this text and a mostly barebones HTML document.
+    section.col-lg-3.section-yellow
+      .row
+        .col-lg-6.col-lg-offset-3
+          = image_tag 'travel.png', class: 'img-responsive'
+      .row
+        .col-lg-12.col-lg-offset-2
+          h1 путешествия
+
+    section.col-lg-3.section-red
+      .row
+        .col-lg-6.col-lg-offset-3
+          = image_tag 'medical.png', class: 'img-responsive'
+      .row
+        .col-lg-12.col-lg-offset-3
+          h1 здоровье
+
+    section.col-lg-3.section-beige
+      .row
+        .col-lg-6.col-lg-offset-3
+          = image_tag 'clothes.png', class: 'img-responsive'
+      .row
+        .col-lg-12.col-lg-offset-3
+          h1 одежда
